@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Diet-Zen Plan</title>
+    <link rel="stylesheet" href="../static/styles-output.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/27c687061b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles-output.css') }}">
+      
+  </head>
+  <body>
+
+    <form action="">
+      <div class="greet">
+        <h2>Hey <div style="color: rgb(142, 234, 217); display: inline-block;">Rohit!</div><br>Your today's meal plan is of {{final}} Calories</h2>
+      </div>
+
+      
+      <div class="full">
+
+        <label>BREAKFAST</label>
+
+
+        <div class="internal-container">
+          <img src={{breakfast[3][0]}} alt="icon" class="internal-icon">
+          <div class="text-container">
+            <h3 class="internal-title">{{breakfast[0][0]}}, Calories: {{breakfast[1][0]}}</h3>
+            <p class="internal-description">{{breakfast[2][0]}}</p>
+          </div>
+        </div>
+
+        <div class="internal-container">
+          <img src={{breakfast[3][1]}} alt="icon" class="internal-icon">
+          <div class="text-container">
+            <h3 class="internal-title">{{breakfast[0][1]}}, Calories: {{breakfast[1][1]}}</h3>
+            <p class="internal-description">{{breakfast[2][1]}}</p>
+          </div>
+        </div>
+
+        <div class="internal-container">
+          <img src={{breakfast[3][2]}} alt="icon" class="internal-icon">
+          <div class="text-container">
+            <h3 class="internal-title">{{breakfast[0][2]}}, Calories: {{breakfast[1][2]}}</h3>
+            <p class="internal-description">{{breakfast[2][2]}}</p>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="action">  
+        <input type="button" onclick= "window.location.href='{{url_for('refresh_b')}}';" value = "REGENERATE BREAKFAST">
+        <!-- <input type="reset" value = "RESET"> -->
+      </div>
+
+      <div class="full">
+        <label>LUNCH</label>
+
+
+        <div class="internal-container">
+          <img src={{lunch[3][0]}} alt="icon" class="internal-icon">
+          <div class="text-container">
+            <h3 class="internal-title">{{lunch[0][0]}}, Calories: {{lunch[1][0]}}</h3>
+            <p class="internal-description">{{lunch[2][0]}}</p>
+          </div>
+        </div>
+
+        <div class="internal-container">
+          <img src={{lunch[3][1]}} alt="icon" class="internal-icon">
+          <div class="text-container">
+            <h3 class="internal-title">{{lunch[0][1]}}, Calories: {{lunch[1][1]}}</h3>
+            <p class="internal-description">{{lunch[2][1]}}</p>
+          </div>
+        </div>
+
+        <div class="internal-container">
+          <img src={{lunch[3][2]}} alt="icon" class="internal-icon">
+          <div class="text-container">
+            <h3 class="internal-title">{{lunch[0][2]}}, Calories: {{lunch[1][2]}}</h3>
+            <p class="internal-description">{{lunch[2][2]}}</p>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="action">  
+        <input  type="button" onclick= "window.location.href='{{url_for('refresh_l')}}';" value = "REGENERATE LUNCH">
+        <!-- <input type="reset" value = "RESET"> -->
+      </div>
+
+      <div class="full">
+        <label>SNACKS</label>
+        <div class="internal-container">
+          <img src={{snacks[3][0]}} alt="icon" class="internal-icon">
+          <div class="text-container">
+            <h3 class="internal-title">{{snacks[0][0]}}, Calories: {{snacks[1][0]}}</h3>
+            <p class="internal-description">{{snacks[2][0]}}</p>
+          </div>
+        </div>
+
+        <div class="internal-container">
+          <img src={{snacks[3][1]}} alt="icon" class="internal-icon">
+          <div class="text-container">
+            <h3 class="internal-title">{{snacks[0][1]}}, Calories: {{snacks[1][1]}}</h3>
+            <p class="internal-description">{{snacks[2][1]}}</p>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <div class="action">  
+        <input  type="button" onclick= "window.location.href='{{url_for('refresh_s')}}';" value = "REGENERATE SNACKS">
+        <!-- <input type="reset" value = "RESET"> -->
+      </div>
+
+      <div class="full">
+        <label>DINNER</label>
+
+        <div class="internal-container">
+          <img src={{dinner[3][0]}} alt="icon" class="internal-icon">
+          <div class="text-container">
+            <h3 class="internal-title">{{dinner[0][0]}}, Calories: {{dinner[1][0]}}</h3>
+            <p class="internal-description">{{dinner[2][0]}}</p>
+          </div>
+        </div>
+
+        <div class="internal-container">
+          <img src={{dinner[3][1]}} alt="icon" class="internal-icon">
+          <div class="text-container">
+            <h3 class="internal-title">{{dinner[0][1]}}, Calories: {{dinner[1][1]}}</h3>
+            <p class="internal-description">{{dinner[2][1]}}</p>
+          </div>
+        </div>
+        
+        <div class="internal-container">
+          <img src={{dinner[3][2]}} alt="icon" class="internal-icon">
+          <div class="text-container">
+            <h3 class="internal-title">{{dinner[0][2]}}, Calories: {{dinner[1][2]}}</h3>
+            <p class="internal-description">{{dinner[2][2]}}</p>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <div class="action">  
+        <input  type="button" onclick= "window.location.href='{{url_for('refresh_d')}}';" value = "REGENERATE DINNER">
+        <!-- <input type="reset" value = "RESET"> -->
+      </div>
+
+    
+      <!-- <div class="full">
+        <label for="message">BREAKFAST</label>
+        <div></div>
+           <textarea name="" id = "message"></textarea> 
+        <input type="text" id = "name">
+        <label for=""></label>
+      </div>
+      <div class="action">  
+        <input type="submit" value = "SEND MESSAGE">
+        <input type="reset" value = "RESET">
+      </div>
+      <div class="icons">
+        <a href="" class = "fa fa-twitter"></a>
+        <a href="" class = "fa fa-facebook"></a>
+        <a href="" class = "fa fa-instagram"></a>
+        <a href="" class = "fa fa-github"></a>
+      </div> -->
+    </form>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Diet-Zen Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+    <form action="/" method="post">
+      <div class="title">
+        <h2>DIET PLAN MAKER</h2>
+      </div>
+
+      <div class="full">
+        <label for="name">WHAT'S YOUR NAME?</label>
+        <input type="text" id = "name"  placeholder="Optional">
+      </div>
+
+      <div class="half">
+        <div class="item">
+          <label for="weight">WHAT'S YOUR WEIGHT?</label>
+          <input type="number" id = "" min="1" max="110" step="any" name="Weight" placeholder="in kgs">
+        </div>
+        <div class="item">
+          <label for="email">WHAT'S YOUR HEIGHT?</label>
+          <input type="number" id = "height" min="1" max="210" step="any" name="Height" placeholder="in cms">
+        </div>
+      </div>
+
+      <div class="full">
+        <label for="age">WHAT'S YOUR AGE?</label>
+        <input type="number" min="10" max="100" step="1" name="age" id = "age" placeholder="something">
+      </div>
+
+      <label class="radio-b">
+        <input type="radio" name="gender" value="male" />
+        <i></i>
+        <span style="margin-right: 20px;">Male</span>
+      </label>
+      <label class="radio-b">
+        <input type="radio" name="gender" value="female" />
+        <i></i>
+        <span>Female</span>
+      </label>
+
+      <div class="input-detail">
+        <select class="activity" name="PA">
+            <option selected hidden value=""> Select Activity Level</option>
+            <option>Very Light</option>
+            <option>Light</option>
+            <option>Moderate</option>
+            <option>Heavy</option>
+            <option>Very Heavy</option>
+        </select>
+        <div class="arrow"></div>
+
+    </div>
+
+
+
+    <div class="input-detail">
+      <select class="goal" name="vary_weight">
+          <option selected hidden value=""> Weight goal preference </option>
+          <option>Mild weight loss(-0.25kg/week)</option>
+          <option>Weight loss(-0.5kg/week)</option>
+          <option>Maintain weight(remains same)</option>
+          <option>Mild Weight gain(+0.25kg/week)</option>
+          <option>Weight gain(+0.5kg/week)</option>
+      </select>
+      <div class="arrow"></div>
+
+  </div>
+
+  <div class="input-detail">
+      <select class="pref" name="diet_type">
+          <option selected hidden value="">Food preferences</option>
+          <option value="Veg">Veg</option>
+          <option value="Non-veg">Non-Veg</option>
+      </select>
+      <div class="arrow"></div>
+
+  </div>
+
+      <div class="action">
+        <input type="submit" value = "CREATE A PLAN">
+        <input type="reset" value = "RESET">
+        <!-- placeholder -->
+        <!-- <a href="output.html">
+          <input value="Submit">
+        </a> -->
+      </div>
+
+    </form>
+  </body>
+</html>
