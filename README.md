@@ -13,6 +13,8 @@ In-order to overcome above problems we require a diet planner which can create a
 * CSS
 * Flask - Web Framework for Python
 
+## Deployment
+Deployed to [render](https://diet-zen.onrender.com/)
 
 ## 
 
