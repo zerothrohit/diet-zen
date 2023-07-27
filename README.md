@@ -18,4 +18,4 @@ Deployed to [render](https://diet-zen.onrender.com/)
 
 ## 
 
-#### Team members🦸🏼: [Farhat S](https://github.com/Faruu18) [Kuntal T](https://github.com/) Vaishnavi S.
+#### Team members🦸🏼: [Farhat S](https://github.com/Faruu18) [Kuntal T](https://github.com/Kuntalthakur01) [Vaishnavi S](https://github.com/Vaishnavi0805).
