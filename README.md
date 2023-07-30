@@ -1,6 +1,6 @@
 # Diet-Zen - Diet Plan Maker 🍊
 
-This is a part of our SEM 4 Mini Project for Second Year Engineering and is purely team work 🤝!
+This is a part of our SEM 4 Mini Project for Second Year Engineering and is purely team work!
 
 ## Problem Statement:
 
